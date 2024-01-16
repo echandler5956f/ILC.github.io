@@ -3808,8 +3808,8 @@ body.is-menu-visible #menu {
 /* Banner */
 
 #banner {
-	max-width: 1400px;
-	margin: 0 auto;
+	/* max-width: 1400px;
+	margin: 0 auto; */
 	background-image: url("images/BiQuBackflipimg3.png");
 	background-size: cover;
 	background-repeat: no-repeat;
