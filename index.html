@@ -62,8 +62,7 @@
                     <p>Our goal is to further the field of legged loco-manipulation. To accomplish this, we need
                         hardware which is dynamic enough to execute our controllers, and robust enough to not break when
                         our controllers encounter unmodeled disturbances. We are currently using a Unitree Go1
-                        quadruped,
-                        which was generously provided by Unitree and the WPI RBE department.</p>
+                        quadruped, which was generously provided by Unitree and the WPI RBE department.</p>
                 </div>
             </section>
             <section class="spotlight">
@@ -87,12 +86,36 @@
                     </p>
                 </div>
             </section>
+
             <section class="spotlight">
-                <div class="video-size">
-                    <video class controls muted preload="metadata">
-                        <source src="images/HURONTakingStepMuted.mp4#t=0.1" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="image">
+                    <img src="images/ConceptVisualizationFinished-removebg.png" alt="Input to the optimizer" />
+                </div>
+                <div class="content">
+                    <h2>BiQu Acrobatics.</h2>
+                    <p>During EREE, the BiQu team used a pseudospectral collocation method to solve the optimal control
+                        problem
+                        associated with a backflip. The input to the optimizer is the intial and final state, as well as
+                        a rotation matrix reference trajectory. The optimal control solver identifies the necessary
+                        contact forces, foot positions, and contact timings to successfully perform the backflip, while
+                        satisfying the dynamic constraints which govern the Single Rigid Body approximation of the
+                        quadruped robot.
+                    </p>
+                </div>
+            </section>
+
+            <section class=" spotlight">
+                <div class="image">
+                    <img src="images/BiQuBackflip1.gif" alt="Matlab backflip" />
+                </div>
+                <div class="image">
+                    <img src="images/BiQuBackflip2.gif" alt="BiQu Software backflip" />
+                </div>
+            </section>
+
+            <section class="spotlight">
+                <div class="image">
+                    <img src="images/huron_v1_physical.png" alt="HURON Hardware" />
                 </div>
                 <div class="content">
                     <h2>HURON<br />
@@ -103,6 +126,35 @@
                         sliding mode control and pseudospectral collocation, respectively.</p>
                 </div>
             </section>
+
+            <section class="spotlight">
+                <div class="image">
+                    <img src="images/Video1.mov" alt="HURON walking (hardcoded)" />
+                </div>
+                <div class="content">
+                    <h2>HURON walking with predefined trajectories</h2>
+                    <p>In this video you can see the HURON hardware walking in the real world. It should be noted
+                        however this video was made with predefined, open-loop joint trajectories. Our more recent work,
+                        while not yet deployed on the real robot, reasons about the whole body dynamics and kinematics.
+                    </p>
+                </div>
+            </section>
+
+            <section class="spotlight">
+                <div class="video-size">
+                    <video class controls muted preload="metadata">
+                        <source src="images/push_recovery.mp4#t=0.1" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-size">
+                    <video class controls muted preload="metadata">
+                        <source src="images/HURONTakingStepMuted.mp4#t=0.1" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
             <section class="spotlight">
                 <div class="video-size">
                     <video class controls muted preload="metadata">
@@ -118,7 +170,6 @@
                         Galileo may solve include legged robot locomotion, optimally driving an autonomous vehicle, or
                         even flying
                         a drone while avoiding obstacles.</p>
-
             </section>
         </section>
 
@@ -154,6 +205,23 @@
             </div>
         </section>
 
+        <section id="three" class="wrapper alt style2">
+            <section class="spotlight">
+                <div class="image">
+                    <img src="images/OverallPipeline.png" alt="Overall perception pipeline" />
+                </div>
+                <div class="content">
+                    <h2>Perception in Galileo.</h2>
+                    <p>Galileo can utilize perception by incorporating information about the robot's surroundings in the
+                        problem's constraints. Using plane segmentation, we can classify steppable regions from point
+                        cloud data (recieved from a depth camera), and convert them into convex steppable regions which
+                        can be applied as linear constraints in Galileo. This will enable Galileo to reason about the
+                        environment in real time, avoiding obstacles and only stepping in regions which are flat enough
+                        to be safe.</p>
+                </div>
+            </section>
+        </section>
+
         <section>
             <div class="row" style="display: flex; justify-content: center;">
                 <div class="col-4 col-8-small" style="margin-top: 20px; margin-bottom: 20px;">
@@ -184,7 +252,7 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="actions stacked">
-                <li class="fa fa-envelope"> gr-biqu@wpi.edu</a></li>
+                <li class="fa fa-envelope"> eechandler@wpi.edu</a></li>
                 <li class="fas fa-map-marker-alt"> Unity Hall 150, WPI, Worcester, MA</li>
             </ul>
             <li class="m1 block-on-mobile"><a href="https://www.linkedin.com/in/echandler5956f/" class="link"><img
