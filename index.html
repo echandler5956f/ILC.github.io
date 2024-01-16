@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ILC</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="landing is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1 ><a href="index.html">ILC</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="https://github.com/echandler5956f/Galileo">Galileo</a></li>
+                                <li><a href="https://users.wpi.edu/~mmaghelih/BiQu.html">BiQu</a></li>
+                                <li><a href="https://users.wpi.edu/~mmaghelih/HURON/HURON.html">HURON</a></li>
+                                <li><a href="https://echandler5956f.github.io/">EREE</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner" style="color: black" ;>
+                <h2 style="color: black;">ILC</h2>
+                <p style="color: black;">Intelligent Legged Control at WPI</p>
+            </div>
+            <div><br></div>
+            <a href="#one" class="more scrolly">Learn More</a>
+        </section>
+
+        <!-- Two -->
+        <section id="two" class="wrapper alt style2">
+            <section class="spotlight">
+                <video class controls style="width: 50%; height: auto;">
+                    <source src="images/Go1StandingCropped.mp4" type="video/mp4" autoplay muted>
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content">
+                    <h2>BiQu is a long-standing WPI project on quadrupedal locomotion.</h2>
+                    <p>Our goal is to further the field of legged loco-manipulation. To accomplish this, we need
+                        hardware which is dynamic enough to execute our controllers, and robust enough to not break when
+                        our controllers encounter unmodeled disturbances. We are currently using a Unitree Go1
+                        quadruped,
+                        which was generously provided by Unitree and the WPI RBE department.</p>
+                </div>
+            </section>
+            <section class="spotlight">
+                <div class="image">
+                    <img src="https://users.wpi.edu/~mmaghelih/images/biqu_final_withbg.JPEG"
+                        alt="BiQU '22-'23 Hardware" />
+                </div>
+                <div class="content">
+                    <h2>BiQu original hardware.</h2>
+                    <p>BiQu (Bimodal Quadruped) was originally a Major Qualifying Project at WPI. The goal was to
+                        explore multi-modal locomotion, including getting a quadruped to stand on two legs. The original
+                        five-person
+                        <a href="https://users.wpi.edu/~mmaghelih/BiQu.html">BiQu</a> team built a 12-DoF quadruped
+                        based on the Solo-12 design, and created <a
+                            href="https://github.com/hushmandesmaeili/BiQu-Software">BiQu Software</a>, which allowed
+                        the robot to perform backflips and walking gaits in simulation. Inspired by this work, several
+                        M.S. students at WPI continued the project over the summer, and created their own backflip
+                        controller using a pseudospectral collocation method. This work was presented at WPI's <a
+                            href="https://echandler5956f.github.io/">EREE</a>.
+                    </p>
+                    </p>
+                </div>
+            </section>
+            <section class="spotlight">
+                <video class controls>
+                    <source src="images/HURONTakingstep.mp4" type="video/mp4" autoplay muted>
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content">
+                    <h2>HURON<br />
+                        WPI's custom-built humanoid</h2>
+                    <p>Simultaneous to the work on BiQu in 2022-23, a WPI team of 13 B.S. students designed and built a
+                        custom bipedal robot, with plans to add an upper body. Over the following summer, a team of 4
+                        M.S. students designed controllers for push recovery and taking steps in simulation using
+                        sliding mode control and pseudospectral collocation, respectively.</p>
+                </div>
+            </section>
+            <section class="spotlight">
+                <video class controls>
+                    <source src="images/HURON Walking.mp4" type="video/mp4" autoplay muted>
+                    Your browser does not support the video tag.
+                </video>
+                <div class="content">
+                    <h2>Galileo:<br />
+                        A product of BiQu and HURON collaboration</h2>
+                    <p>As of 2023-2024, BiQu and HURON have worked hand-in-hand to develop Galileo: WPI's in-house
+                        psueodspectral collocation solver for hybrid systems. An example of the types of problems
+                        Galileo may solve include legged robot locomotion, optimally driving an autonomous vehicle, or
+                        even flying
+                        a drone while avoiding obstacles.</p>
+
+            </section>
+        </section>
+
+        <section class="wrapper style5" style="background-color: #2e3842;">
+            <div class="inner" style="color: white;">
+
+                <div class="row" style="color: white; display: flex; justify-content: center;">
+                    <div class="col-6 col-12-medium" style="color: white; margin: 20px;">
+                        <h5 style="color: white; margin-left: -200px;">Galileo is:</h5>
+                        <ul>
+                            <li>versatile in that it is designed to solve <em>any</em>
+                                continuous variable optimal control problem for rigid body systems written in Bolza
+                                form, making it applicable to quadrupeds, humanoid robots, drones, autonomous
+                                vehicles, and more.</li>
+                            <li>efficient, using powerful yet lightweight libraries such as <a
+                                    href="https://github.com/stack-of-tasks/pinocchio">pinocchio</a> and
+                                <a href="https://github.com/casadi/casadi">CasADi</a> to accurately compute the
+                                complex floating base dynamics, and the symbolic
+                                gradients/Hessians of the optimal control problem. Preliminary results show promise
+                                of real-time nonlinear MPC capabilities.
+                            </li>
+                            <li>lightweight and easy to install, containing mostly headers and relying only on the
+                                core ingredents from <a href="https://github.com/stack-of-tasks/pinocchio">pinocchio</a>
+                                and <a href="https://github.com/casadi/casadi">CasADi</a>.</li>
+                            <li>extensible, including several powerful interfaces to allow users
+                                to easily set up complex optimal control problems (including quadruped and biped
+                                locomotion) in as few as ~100 lines of code.</li>
+                            <li><a href="https://www.fsf.org/">free-software</a>, open-source and available on <a
+                                    href="https://github.com/echandler5956f/Galileo">GitHub</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row" style="display: flex; justify-content: center;">
+                <div class="col-4 col-8-small" style="margin-right: 100px; margin-top: 20px; margin-bottom: 20px;">
+                    <h2>Publications and Future Work</h2>
+                    <p>ILC's work in control for legged robots has led to a paper submission to ICRA 2024. We plan to
+                        submit two more conference papers in IROS + ICRA 2025 on Galileo. Our research goals currently
+                        encompass the combined tasks of locomotion and manipulation, dubbed: "loco-manipulation".
+                        Loco-manipulation for legged robots is one of <em>the hardest</em> problems in robotics. We intend to use our
+                        in-house switched system solver (Galileo) to build a multi-modal tree in real time which will allow us to
+                        solve both the optimal trajectory (a continuous problem) and the optimal contact sequence (a
+                        discrete problem) simultaneously. This approach was inspired by the minds at ETH-Zurich in their
+                        <a href="https://arxiv.org/pdf/2308.09179.pdf"> Versatile Multi-Contact Planning and Control for
+                            Legged Loco-Manipulation</a> publication.</p>
+                </div>
+                <div class="col-4 col-8-small" style="margin-left: 100px; margin-top: 20px; margin-bottom: 20px;">
+                    <h2>Are you ready to shape the world of Legged Robotics?</h2>
+                    <p>ILC is composed of a team of WPI students invested in furthering the field of Legged
+                        Robotcs. We are constantly recruiting new undergrad and graduate students to continue our work!
+                        We hope that the BiQu and HURON projects continue to stand tall, as a testemant to WPI's
+                        contribution to Legged Robotics. Please reach out to us if you are interested.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="actions stacked">
+                <li class="fa fa-envelope"> gr-biqu@wpi.edu</a></li>
+                <li class="fas fa-map-marker-alt"> Unity Hall 150, WPI, Worcester, MA</li>
+            </ul>
+            <li class="m1 block-on-mobile"><a href="https://www.linkedin.com/in/echandler5956f/" class="link"><img
+                        class="icon" src="images/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 25px; height: 25px;">
+                    LinkedIn</a></li>
+            <ul class="copyright">
+                <li style="font-size: 8px;">&copy; ILC. All rights reserved. </li>
+                <li style="font-size: 8px;"> Website template credits belongs to html5up.net | @ajlkn. </li>
+            </ul>
+        </footer>
+
+    </div>
+    </div>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/images/scrollreveal.min.js"></script>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
