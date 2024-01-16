@@ -98,8 +98,9 @@
                         associated with a backflip. The input to the optimizer is the intial and final state, as well as
                         a rotation matrix reference trajectory. The optimal control solver identifies the necessary
                         contact forces, foot positions, and contact timings to successfully perform the backflip, while
-                        satisfying the dynamic constraints which govern the Single Rigid Body approximation of the
-                        quadruped robot.
+                        satisfying the dynamic constraints which govern the SRB approximation of the
+                        quadruped robot. Please note that in the time since this naive implementation, we have upgraded
+                        to using the full centroidal dynamics in Galileo, which is far more accurate.
                     </p>
                 </div>
             </section>
@@ -129,7 +130,7 @@
 
             <section class="spotlight">
                 <div class="image">
-                    <img src="images/Video1.mov" alt="HURON walking (hardcoded)" />
+                    <img src="images/RealRobotWalking.mp4" alt="HURON walking (hardcoded)" />
                 </div>
                 <div class="content">
                     <h2>HURON walking with predefined trajectories</h2>
@@ -168,8 +169,7 @@
                     <p>As of 2023-2024, BiQu and HURON have worked hand-in-hand to develop Galileo: WPI's in-house
                         psueodspectral collocation solver for hybrid systems. An example of the types of problems
                         Galileo may solve include legged robot locomotion, optimally driving an autonomous vehicle, or
-                        even flying
-                        a drone while avoiding obstacles.</p>
+                        even flying a drone while avoiding obstacles.</p>
             </section>
         </section>
 
